@@ -1,0 +1,6 @@
+hello this is just a random text file. this is the file that i will be 
+using for encoding and decodoing task for lab 2 of the Information Security
+and Cryptography subject. According to the defination, the scissor cipher
+is a cipher in which k = 3 for shift cipher.
+
+
