@@ -1,0 +1,12 @@
+Public prime p = 4294967311
+Generator g = 5
+
+Alice private a = 1444685028
+Alice public A = 3230892131
+
+Bob private b = 147143655
+Bob public B = 63867420
+
+Shared key computed by Alice = 2870770971
+Shared key computed by Bob = 2870770971
+Keys match: YES
