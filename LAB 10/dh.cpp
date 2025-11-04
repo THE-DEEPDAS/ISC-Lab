@@ -16,7 +16,7 @@ uint64_t modmul(uint64_t a, uint64_t b, uint64_t mod)
     return res;
 }
 
-// Function: Modular exponentiation using repeated squaring
+// Modular exponentiation using repeated squaring
 uint64_t modexp(uint64_t base, uint64_t exp, uint64_t mod)
 {
     uint64_t result = 1;
@@ -44,14 +44,14 @@ int main()
     mt19937_64 gen(rd());
     uniform_int_distribution<uint64_t> dist(2, p - 2);
 
-    uint64_t a = dist(gen); // Alice's private key
-    uint64_t b = dist(gen); // Bob's private key
+    uint64_t a = dist(gen); 
+    uint64_t b = dist(gen); 
 
-    uint64_t A = modexp(g, a, p); // Alice's public value
-    uint64_t B = modexp(g, b, p); // Bob's public value
+    uint64_t A = modexp(g, a, p); 
+    uint64_t B = modexp(g, b, p); 
 
-    uint64_t KA = modexp(B, a, p); // Shared key computed by Alice
-    uint64_t KB = modexp(A, b, p); // Shared key computed by Bob
+    uint64_t KA = modexp(B, a, p); 
+    uint64_t KB = modexp(A, b, p); 
 
     cout << "Public prime p = " << p << "\n";
     cout << "Generator g = " << g << "\n\n";
