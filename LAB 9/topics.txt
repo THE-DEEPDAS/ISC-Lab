@@ -1,0 +1,10 @@
+modular exponentiation means a^b mod n mate direct a ne b vaar multiply nai karine a ne a sathe 
+multiply karo and mod levo so each time the reminder is a small value.
+
+a should be greater than b, if it follows then:
+gcd(a, b) = gcd(b, a mod b)
+
+if a = bq + r then any number that divides a and b also divides reminder
+so their gcd is same
+
+extended euclidean thi x,y pan made which makes ax + by = gcd(a, b)
